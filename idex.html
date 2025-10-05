@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML Sistematico</title>
+	<style>
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		body{
+			background-color: #008000;
+		}
+		header{
+			background-color: lightyellow;
+			text-align: center;
+			font-family: Baguet Script;
+			height: 80px;
+			width: 100%;
+	}
+	ul, ol{
+		list-style: none;
+	}
+	.nav{
+		width: 500px;
+		margin: auto;
+	}
+	.nav > li{
+		float: left;
+	}
+	.nav li a{
+		background-color: #008000;
+		color: #fff;
+		text-decoration: none;
+		padding: 10px 12px;
+		display: block;
+	}
+	.nav li a:hover{
+		background-color: #d2691e;
+	}
+	.nav li ul{
+		display: none;
+		position: absolute;
+		min-width: 140px;
+		text-align: left;
+	}
+	 .nav li:hover > ul{
+	 	display: block;
+	 }
+	 .nav li ul li{
+	 	position: relative;
+	 }
+	 .nav li ul li ul{
+	 	right: -140px
+	 	top: 0px;
+	 }
+	nav{
+			border: 1px solid #008000;
+			background-color: #6b8e23;
+	 		text-align: center;
+			font-family: Baguet Script;
+			height: 42px;
+			width: 100%; 
+
+		}
+		main{
+			text-align: center;
+			font-family: Baguet Script;
+			min-height: calc(100vh - 100px);
+			width: 100%; 
+			margin-bottom: 10px;
+			display: flex;
+		}
+		article{
+			margin: 15px;
+			border-radius: 20px;
+			background-color: #6b8e23;
+			text-align: center;
+			font-family: Baguet Script;
+			height: 100%;
+			width: 80%; 
+			margin-bottom: 10px;
+		}
+		section{
+		    border-radius:20px ;
+			background-color: #ff7f00;
+			text-align: justify;
+			font-family: Baguet Script;
+			padding: 20px;
+			width: 90%; 
+			margin-bottom: 10px;
+			margin: 20px;
+			margin-top: 20px;	
+		}
+		aside{
+			border-radius: 10px;
+			background-color: #ff7f00;
+			text-align: left;
+			font-family: Baguet Script;
+			min-height: 100%;
+			width: 18%; 
+			margin-bottom: 10px;
+			margin-left: 15px;
+			padding-top: 10px;
+			padding-left: 15px;
+		footer{
+			border-color: #008000;
+			text-align: lightyellow;
+			font-family: Baguet Script;
+			min-height: 50px;
+			width: 100%; 
+			padding-top: 30px;
+			padding-bottom: 30px;
+			color: #6b8e23;
+			text-shadow: 5PX 5PX 10PX gray;
+     }     
+     img{
+     	height: 200px;
+     	border-radius: 5px;
+     	box-shadow: gray 5px 5px 10px;
+     }
+     a{
+     	text-decoration: #d2691e;
+     	color: black;
+     }                            
+  </style>
+</head>
+<body>
+	<header><h2>LICEO COMPU-MARKET</h2>
+		<br>Bachillerato en computacion con orientacion cientifica
+	
+	<nav>
+		<ul class="nav">
+			<li><a href="#nuevo">Inicio</a>
+			 </li>
+			<li><a href="#ini">Sobre la carrera</a>
+			 </li>
+			<li><a href="#pro">cursos</a>
+			   	<ul>
+			   		<li><a href="#ef">Educacion fisica</a> </li>
+					<li><a href="#it">Ingles tecnico</a> </li>
+					<li><a href="#ci">computacion/instalacion de sofware</a> </li>
+					<li><a href="#cl">Comunicacion y literatura</a></li>
+					<li><a href="#ff">Fisica fundamental</a></li>
+					<li><a href="#ma">Matematica</a> </li>
+					<li><a href="#cg">Contabilidad</a> </li>
+					<li><a href="#es">Estudios sociales</a> </li>
+					<li><a href="#pr">programacion</a></li>
+					<li><a href="#ee">Estadistica</a></li>
+				</ul></li>
+			<li><a href="#con">Logo</a> </li>
+		</ul>
+	</nav>
+	<main>
+		<article>
+			<section id="ini">
+				<h1 id="sin">Sobre la carrera</h1>
+			<h2 id="mis">Bachillerato en computacion con orientacion cientifica</h2>
+				<p>La carrera trata de<br>Desarrollar habilidades y conocimientos tecnológicos para el uso, administración y aplicación de tecnologías de la información y la comunicación, incluyendo la programación, el mantenimiento de equipos y el soporte técnico.</p><br>
+			 <center><img src="https://practicasupervisadacercado.wordpress.com/wp-content/uploads/2021/09/bachillerato-orientacion-comercial-1.jpg?"width="300"></center><br>
+			</section>
+			<section id="pro">
+			<h1 id="car">Cursos</h1>
+			<hr><br>
+			<h2 id="ef">Educacion fisica</h2>
+			<p>Este curso<br>El movimiento y las actividades físicas,busca la formación integral del ser humano, promoviendo la salud, el desarrollo de habilidades motrices, el bienestar socioemocional y el desarrollo de valores como el respeto, la solidaridad y el juego limpio.</p><br>
+			 <center><img src="https://cve.edu.es/wp-content/uploads/2023/11/Sin-titulo-1-7.jpg" width="300"></center><br>
+			<hr><br>
+			<h2 id="it">Ingles tecnico</h2>
+			<p>Este curso<br>Busca desarrollar habilidades comunicativas en el idioma, incluyendo la comprensión y producción de textos orales y escritos, así como el conocimiento de la gramática, el vocabulario y la pronunciación.</p><br>
+			<center><img src="https://bessysitiodeinformatica.wordpress.com/wp-content/uploads/2018/07/in1.jpg?w=482&h=241" width="300"></center><br>
+			<hr><br>
+			<h2 id="ci">Computacion/instalacion de sofware</h2>
+			<p>Este curso<br>Enseña a los estudiantes a comprender, instalar, mantener y actualizar diferentes tipos de programas en computadoras, incluyendo la instalación de sistemas operativos y aplicaciones.</p><br>
+			<center><img src="https://intratecno.com/wp-content/uploads/soporte-remoto-notebook-instalacion-de-software-en-linea-servicio-tecnico-online-e1678496646749.webp" width="300"></center><br>
+			<hr><br>
+			<h2 id="cl">Comunicacion y literatura</h2>
+			<p>Este curso<br>Estudia cómo las personas usan el lenguaje (hablado, escrito y gestual) para transmitir información, ideas y emociones, y cómo las sociedades organizan y entienden esa información.</p><br>
+			<center><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAwuaipoQL1vPxusBYLik8dR4gG6kjUIdt3A&s" width="300"></center><br>
+			<hr><br>
+			<h2 id="ff">Fisica fundamental</h2>
+			<p>Este curso<br>Estudia el comportamiento del universo, la materia, la energía, el espacio y el tiempo, así como sus interacciones, buscando leyes universales que describan los fenómenos naturales.</p><br>
+			<center><img src="https://tomi-digital-resources.storage.googleapis.com/images/classes/lessons/lsn-48101-5f304750111b2.jpeg" width="300"></center><br>
+			<hr><br>
+			<h1 id="ma">Matemáticas</h1>
+			<p>Este curso<br>Ciencia que estudia las relaciones entre cantidades, magnitudes y propiedades, así como las estructuras, el espacio y el cambio.</p><br>
+			<center><img src="https://concepto.de/wp-content/uploads/2013/08/geometria-e1551991013554.jpg" width="300"></center><br>
+			<hr><br>
+			<h2 id="cg">Contabilidad</h2>
+			<p>Este curso<br>Su objetivo es proporcionar una imagen clara de la salud económica de la empresa a través de estados financieros como el balance general y el estado de resultados.</p><br>
+			<center><img src="https://concepto.de/wp-content/uploads/2019/08/contabilidad-administrativa-e1564786257370.jpg" width="300"></center><br>
+			<hr><br>
+			<h2 id="es">Estudios sociales</h2>
+			<p>Este curso<br>Area educativa interdisciplinaria que estudia la sociedad, las interacciones humanas y el mundo, abarcando disciplinas como la historia, geografía, economía, sociología y política.</p><br>
+			<center><img src="https://media.istockphoto.com/id/1132078522/es/foto/globo-de-cristal-del-mundo-en-bosquejo-del-esquema-del-mapa-del-mundo-en-la-p%C3%A1gina-de-papel.jpg?s=612x612&w=0&k=20&c=bmvF3AmGRsWJPru0KepVFUc85P-y5hQfYXDHBVABP8k=" width="300"></center><br>
+			<hr><br>
+			<h2 id="pr">Programacion</h2>
+			<p>Este curso<br>Enseña a los estudiantes el arte de dar instrucciones a una computadora para que realice tareas específicas, creando software, aplicaciones y sistemas a través del uso de lenguajes de programación como Python o Java.</p><br>
+			<center><img src="https://multiserviciosprecisur.com/wp-content/uploads/2021/06/Instalacion-de-Sistemas-Informaticos3.webp" width="300"></center><br>
+			<hr><br>
+			<h2 id="ee">Estadistica</h2>
+			<p>Este curso<br>Ciencia que se ocupa de la recopilación, organización, análisis e interpretación de datos numéricos para comprender la variabilidad, tomar decisiones informadas y hacer predicciones.</p><br>
+			<center><img src="https://unade.edu.mx/wp-content/uploads/2025/09/estadistica_descriptiva.jpg" width="300"></center><br>
+			</section>
+			<section id="con">
+				<h1 id="jor">LOGO LCM</h1>
+			</ul>
+			<li><center><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGOsSKSsuDXdO1cPNmQYA-7-UZ9FDbLCesMA&s" width="300"></center></li>
+		</ul>
+	</section>
+		</article>
+		<aside>
+		<h6 class="barral">Contenido Relacionado</h6>
+		<hr><br>
+		</h4>Liceo Compu - Market</h4></center>
+		<br><br>
+ 	    <ol>
+ 	   	<li><a href="https://www.waze.com/es-419/live-map/directions/liceo-compu-market-4a-avenida-29-villa-nueva?to=place.w.176554129.1765606829.10178819"target="blank">Ubicacion</a></li>
+		<li><a href="https://www.facebook.com/LiceoCM/?locale=es_LA"target="blank">Facebook</a></li>
+		<li><a href="https://liceocompumarket.wordpress.com/"target="blank">Historia</a></li>
+	 </ol>
+   </aside>
+  </main>
+  <footer>
+		<div class="piepag">
+			<h1>LICEO COMPU-MARKET</h1>
+			<h2>4ta.AV 6-29,Zona 1 villa-nueva</h2>
+			<h3>Teléfono:6636-0705</h3>
+			<h4>Tu pasaporte al exito</h4>
+		</div>
+	</footer>
+
+</body>
+</html>
